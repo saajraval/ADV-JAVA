@@ -1,0 +1,33 @@
+9/4/22 (ADV JAVA notes )
+
+bin -> stores the executable files
+
+conf -> user specific files are there  if these are modified then server will get affected(so due to that this has to be secured )
+
+lib -> inbuilts libraries are there if not available then google
+
+
+-------------------------------------------------------
+need to add the batch file in C drive in task manager 
+to del temp prefecth and %temp%
+
+------------------------------------------------------
+
+13-04-22  
+------------------------------------------------------
+
+src -> java  then the class files will go in build 
+
+webapp / webcontent all web file will go in this folder 
+
+WEB_INF->  most secure  it has  
+
+web.xml [ configuration ]
+
+
+------------------------------------------------------
+
+ servlet 
+child of it -> generic servlet 
+
+child of it -> http servlet
