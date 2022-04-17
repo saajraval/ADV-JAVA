@@ -5,28 +5,10 @@
 <title>Addition</title>
 </head>
 <body>
-<form action="get" name="f">
-		<table>
-            <tr>
-                <td>N1 :<input type="text" name="v1" placeholder="Enter number 1"></td>
-            </tr>
-            <tr>
-                <td>N2 :<input type="text" name="v2" placeholder="Enter number 2"></td>
-            </tr>
-            <tr>
-            	<td> <input type="button" onclick="add()">Add </td>
-            </tr>
-        </table>
+<form action="AdditionServlet" method="post">
+		Number 1: <input type="number" name="n1"><br>
+		Number 2: <input type="number" name="n2"><br>
+		<button>Add</button>
 </form>
-<script type="text/javascript">
-	function add(){
-		
-		var a = parseInt(document.f.v1.value);
-		var b = parseInt(document.f.v2.value);
-		var c = a + b;
-		document.write(a + " + " + b + " = " + c);
-		
-	}
-</script>
 </body>
 </html>

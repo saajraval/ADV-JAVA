@@ -28,4 +28,14 @@
   <servlet-name>LoginServlet</servlet-name>
   <url-pattern>/LoginServlet</url-pattern>
   </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>AdditionServlet</servlet-name>
+  	<servlet-class>com.controller.AdditionServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>AdditionServlet</servlet-name>
+  <url-pattern>/AdditionServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
