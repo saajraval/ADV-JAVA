@@ -31,3 +31,27 @@ web.xml [ configuration ]
 child of it -> generic servlet 
 
 child of it -> http servlet
+
+-----------------------------------------------
+
+23-4-22
+
+respone that we use to give with the help of out.print() is very tedeous task when we are doing enterprise application. 
+
+Thus view side JSP is required and at response side also 
+
+Jsp alternative are velocity , thymeleaf (it has better proccessing power ),freemarker
+
+JSP WEB content ma bane 
+and its entry is not to be done in WEB-XML
+
+servlet name has the actual name and servlet mapping has the public name 
+
+we can navigate using request dispatcher (its a interface ) 
+----------------
+to pass data : request object has a method setAttribute("data name",data_value);
+ 
+scriptlet is used to write java code in JSP 
+there are 9 implicit object in java  (out is one the object )
+thats y we user out.println();
+requestis another object    

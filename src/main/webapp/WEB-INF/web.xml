@@ -43,4 +43,14 @@
     <url-pattern>/RegistrationServlet</url-pattern>
   </servlet-mapping>
   
+  
+  <servlet>
+  	<servlet-name>Addition_jsp</servlet-name>
+  	<servlet-class>com.controller.Addition_jsp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Addition_jsp</servlet-name>
+  	<url-pattern>/Addition_jsp</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
