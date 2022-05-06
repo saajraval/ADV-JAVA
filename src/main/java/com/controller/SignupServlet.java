@@ -10,6 +10,7 @@ public class SignupServlet  extends HttpServlet{
 		String firstName = request.getParameter("firstName");
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
+		
 				
 		System.out.println(firstName); //will print on console
 		System.out.println(email); //will print on console
@@ -24,6 +25,7 @@ public class SignupServlet  extends HttpServlet{
 			out.print("FirstName : "+firstName + "<br>");
 			out.print("Email : "+email + "<br>");
 			out.print("Password : "+password + "<br>");
+			
 			out.print("</body></html>");
 			
 		}
