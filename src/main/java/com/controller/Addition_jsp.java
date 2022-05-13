@@ -28,6 +28,6 @@ public class Addition_jsp extends HttpServlet{
 		//to navigate to JSP we use requestDispatcher 
 		
 		RequestDispatcher rd= request.getRequestDispatcher("AdditionOutput.jsp");
-		rd.forward(request, response);
+		rd.forward(request, response);	
 	}
 }

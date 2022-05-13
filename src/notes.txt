@@ -4,7 +4,7 @@ bin -> stores the executable files
 
 conf -> user specific files are there  if these are modified then server will get affected(so due to that this has to be secured )
 
-lib -> inbuilts libraries are there if not available then google
+lib -> inbuilt libraries are there if not available then google
 
 
 -------------------------------------------------------
@@ -55,3 +55,10 @@ scriptlet is used to write java code in JSP
 there are 9 implicit object in java  (out is one the object )
 thats y we user out.println();
 requestis another object    
+
+-----------------------------------
+27-4-22
+-----------------------------------
+request dispatcher is an interface then there is a child created by java for using its method like request getRequestDispatcher()
+
+ 
