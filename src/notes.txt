@@ -61,4 +61,13 @@ requestis another object
 -----------------------------------
 request dispatcher is an interface then there is a child created by java for using its method like request getRequestDispatcher()
 
- 
+-------------------------------------
+29-4-22 
+-------------------------------------
+
+four types of drivers : 
+type 1--> native 
+type 2--> native + java
+type 3--> pure java (most used and it has to be loaded and connected before use )
+type 4--> it is basically type 3 driver but there is no need to load it in the library 
+
