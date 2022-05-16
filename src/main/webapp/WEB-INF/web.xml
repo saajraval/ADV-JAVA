@@ -52,5 +52,15 @@
   	<servlet-name>Addition_jsp</servlet-name>
   	<url-pattern>/Addition_jsp</url-pattern>
   </servlet-mapping>
+
+
+  <servlet>
+  	<servlet-name>ElectionServlet</servlet-name>
+  	<servlet-class>com.controller.ElectionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ElectionServlet</servlet-name>
+  	<url-pattern>/ElectionServlet</url-pattern>
+  </servlet-mapping>
   
 </web-app>

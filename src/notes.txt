@@ -71,3 +71,18 @@ type 2--> native + java
 type 3--> pure java (most used and it has to be loaded and connected before use )
 type 4--> it is basically type 3 driver but there is no need to load it in the library 
 
+-------------------------------------
+30-4-22 
+-------------------------------------
+to run query in the data base we have interface => statement 
+2nd one with some optimization =>PreparedStatement
+3rd to run the pl/sql block => callableStatement no need for this as databse ma query run karya karta java ma run faster thase 
+
+
+=> pela DML compiler syntax  check karse 
+then parser will convert it and then optimizer will find the best way to run it 
+
+=> thus statement will compile evaluate and pass every time 
+=> but in prepared statement it will be pre compiled and optimized 
+
+=> to store temp data in memory we use bean 

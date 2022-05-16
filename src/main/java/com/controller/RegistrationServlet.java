@@ -1,12 +1,18 @@
 package com.controller;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.bean.UserBean;
+import com.dao.UserDao;
+import com.util.DbConnection;
 public class RegistrationServlet extends HttpServlet {
 	
 	public void  service(HttpServletRequest request , HttpServletResponse response) throws IOException,ServletException{
@@ -31,7 +37,7 @@ public class RegistrationServlet extends HttpServlet {
 //			}else if (FirstName.length()<2) {
 //				isError=true;
 ////				errorMsg+="Please enter proper name !!<br>";
-//				request.setAttribute("firstNameError","Please Enter First name prperly!!<br>");
+//				request.setAttribute("firstNameError","Please Enter First name properly!!<br>");
 //				
 //			}
 //			else {
@@ -90,6 +96,12 @@ public class RegistrationServlet extends HttpServlet {
 				rd.forward(request, response);
 			}
 			else {
+				UserBean user = new UserBean();
+				user.setFirstName(FirstName);
+				user.setEmail(Email);
+				user.setPassword(password);
+				new UserDao().inserUser(user);
+				
 				RequestDispatcher rd = request.getRequestDispatcher("Home.jsp");
 				rd.forward(request, response);
 			}
