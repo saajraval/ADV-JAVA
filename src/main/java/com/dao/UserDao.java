@@ -65,4 +65,31 @@ public class UserDao {
 		return users;	
 	}//end of getAllUsers
 	
+	public boolean deleteUser(int userId) {
+		Connection con = null;
+		boolean flag = false;
+		PreparedStatement pstmt =null;
+		
+		try {
+			con =DbConnection.getConnection();
+			pstmt =con.prepareStatement("delete from users where 	userId=?");
+			pstmt.setInt(1, userId);
+			
+			int record = pstmt.executeUpdate();
+			if(record!= 0) {
+				flag = true;
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {	 
+			try {
+				con.close();	
+			} catch (Exception e2) {
+				e2.printStackTrace();// TODO: handle exception
+			}
+		}
+		
+		return flag ;
+//		return false;
+	}
 }

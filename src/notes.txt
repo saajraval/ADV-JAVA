@@ -99,3 +99,17 @@ then parser will convert it and then optimizer will find the best way to run it
 => but in prepared statement it will be pre compiled and optimized 
 
 => to store temp data in memory we use bean 
+
+-----------------------------------------
+6-5-22
+-------------------------------------------
+till now we were doing configuration in web.xml which decreases our produv=ctivity and maks the task tedious 
+now we will use annotations in java for the same => @WebSevlet("/urlName")
+
+request.getParameter() -> will return string so we need to typecast it into req. format 
+
+the delete query Doa ma banse 
+
+
+=> There are two waya to navigate from one node to another 1- using request dispatcher 2 - with send Redirect
+if you want to carry forwardd then you need to use requsetDispacther eg like in login page we need to carry forward the data .........
