@@ -100,10 +100,14 @@ public class RegistrationServlet extends HttpServlet {
 				user.setFirstName(FirstName);
 				user.setEmail(Email);
 				user.setPassword(password);
-				new UserDao().inserUser(user);
-				
-				RequestDispatcher rd = request.getRequestDispatcher("Home.jsp");
-				rd.forward(request, response);
+				boolean status = new UserDao().inserUser(user);
+				if(status == true) {
+					RequestDispatcher rd = request.getRequestDispatcher("ListUserServlet");
+					rd.forward(request, response);
+				}
+				else {
+					//error
+				}
 			}
 			
 //			response.setContentType("text/html");

@@ -77,8 +77,21 @@ type 4--> it is basically type 3 driver but there is no need to load it in the l
 to run query in the data base we have interface => statement 
 2nd one with some optimization =>PreparedStatement
 3rd to run the pl/sql block => callableStatement no need for this as databse ma query run karya karta java ma run faster thase 
+-----------------------------------------
+4-5-22
+-------------------------------------------
+now we will make a sevlet for registration api to fetch data from database and give it to jsp to print it 
+databse mathi data lava vali query Dao ma lakhisu 
 
+Whenever we want to insert , update or delete then only we will use executeUpdate(); method ;
+but when read only operation is needed we will use executeQuery() method; 
 
+the temp data is stored in implicit cursor then stored in databes but we can also create our own explicit cursor using pl/sql 
+
+similarly java nu cursor elte result set (sql package valu )
+
+result set mathi 1st row kadi ne userbean ne aapvani  and e userbean arraylist ne aapi devano till there is data ...........then
+this whole array list is given to 
 => pela DML compiler syntax  check karse 
 then parser will convert it and then optimizer will find the best way to run it 
 

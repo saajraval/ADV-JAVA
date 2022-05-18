@@ -63,4 +63,16 @@
   	<url-pattern>/ElectionServlet</url-pattern>
   </servlet-mapping>
   
+  
+  
+  <servlet>
+  	<servlet-name>ListUserServlet</servlet-name>
+  	<servlet-class>com.controller.ListUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ListUserServlet</servlet-name>
+  	<url-pattern>/ListUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>
