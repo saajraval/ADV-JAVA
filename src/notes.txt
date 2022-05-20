@@ -113,3 +113,34 @@ the delete query Doa ma banse
 
 => There are two waya to navigate from one node to another 1- using request dispatcher 2 - with send Redirect
 if you want to carry forwardd then you need to use requsetDispacther eg like in login page we need to carry forward the data .........
+
+
+
+-------------------------------------------------------------
+q1: Which driver are needed to make connection between mysql and java?
+ans => mysql-connector.jar
+	=> com.mysql.jdbc.Driver
+	
+q2: which api helps us to handle jdbc operations?
+ans => jdbc api 
+
+q3: package
+ans => java.sql
+
+q4: What is the return type of getConnection() of driverManager ?
+ans => Connection 
+
+q5 :Which method is used to execute update query from java ?
+ans => executeUpdate()
+
+q6: What is the return tyoe of executeUpdate() ?
+ans => int 
+
+q7 : What is the return tyoe of executeQuery ()?
+ans =>  ResultSet 
+
+q8: Which exception thrown when we perform jdbc operation ?
+ans => SQLException
+
+-----------------------------------------------------------------
+
